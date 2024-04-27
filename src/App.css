@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+.main {
+  margin: 0 15%;
+}
+article {
+  margin: 5% 0;
 }
 
-.App-logo {
-  height: 40vmin;
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 60%;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav img {
+  height: 65px;
+  width: 55px;
+}
+
+/* Hero section */
+.heroSection,
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+.left-heroSection,
+.left-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.heroSection img {
+  /* height: 100%; */
+  border-radius: 30px;
+}
+
+/* common */
+
+/* button */
+.mainBtn {
+  background-color: #ffffff;
+  background-image: linear-gradient(#676767, #000000);
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow 0.05s ease-in-out, opacity 0.05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  height: 50px;
+}
+
+.mainBtn:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset,
+    rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: 0.15s, 0.15s;
+}
+
+.mainBtn:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.mainBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.mainBtn:disabled:active {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainBtn:disabled:hover {
+  box-shadow: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Card */
+
+.card {
+  width: 25%;
+}
+.card div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: 40%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card a {
+  color: cadetblue;
+}
+
+/* Rating Card */
+
+.ratingCard {
+  border: 1px solid black;
+  padding: 15px;
+  background-color: antiquewhite;
+}
+
+.ratingCard img {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.ratingCard div {
+  display: flex;
+}
+
+.review p {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+/* Specials */
+.specials-top {
+  display: flex;
+  justify-content: space-between;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Testimonials */
+
+.testimonials div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonials h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* About */
+.left-about p {
+  text-align: justify;
+  margin-right: 25px;
+  width: 70%;
+}
+
+.about {
+  margin: 10% 0;
+}
+
+.about-right {
+  position: relative;
+}
+
+.about-right img {
+  border-radius: 20px;
+  height: 300px;
+  width: 200px;
+  position: relative;
+}
+
+.about-right img:last-child {
+  position: absolute;
+  top: 60px;
+  right: 150px;
+  z-index: -1;
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 0;
+}
+footer div{
+  margin: 0 5px;
+}
+footer ul{
+  list-style-type: none;
+  margin-right: 40px;
+}
+footer ul li{
+  margin: 5px;
+}
+footer img{
+ height: 200px;
+ width: 200px;
+ display: flex;
+ justify-self: center;
+ align-self: center;
+}
+
+.socialLinks{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
