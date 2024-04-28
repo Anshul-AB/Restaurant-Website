@@ -7,7 +7,7 @@ const Header = () => {
         <img src={Logo} alt='Logo' />
         <ul>
             <li>
-                <a href='#'>Home</a>
+                <a href='*'>Home</a>
             </li>
             <li>
                 <a href='#'>About</a>

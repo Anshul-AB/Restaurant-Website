@@ -25,7 +25,7 @@ const Main = () => {
             Experience zestful flavors at Little Lemon Restaurant, <br />
             where every bite is a burst of freshness.
           </p>
-          <Button buttonLabel={"Reserve a Table"} />
+          <Button buttonLabel={"Reserve a Table"} linkTo={'/booking'} />
         </div>
         <img src={IndianDishImage} alt="dish image" />
       </div>

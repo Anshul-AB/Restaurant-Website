@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Button = ({buttonLabel}) => {
+const Button = ({ buttonLabel, linkTo }) => {
   return (
-    <button className='mainBtn'>{buttonLabel}</button>
-  )
-}
+    <Link to={linkTo}>
+      <button className="mainBtn">{buttonLabel}</button>
+    </Link>
+  );
+};
 
-export default Button
+export default Button;
