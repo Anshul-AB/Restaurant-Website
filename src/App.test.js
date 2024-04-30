@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+// Define a test case using the test function
+test("renders App component without crashing", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  // Use screen query to check if Header component is rendered
+  const titleElements = screen.getAllByText("Little Lemon");
+  expect(titleElements.length).toBeGreaterThan(0);
 });

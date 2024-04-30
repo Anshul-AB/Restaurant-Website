@@ -146,7 +146,7 @@ nav img {
 }
 
 /* Specials */
-.specials{
+.specials {
   margin: 10% 0;
 }
 .specials-top {
@@ -206,30 +206,60 @@ nav img {
 
 /* Footer */
 
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   margin: 10% 0;
 }
-footer div{
+footer div {
   margin: 0 5px;
 }
-footer ul{
+footer ul {
   list-style-type: none;
   margin-right: 40px;
 }
-footer ul li{
+footer ul li {
   margin: 5px;
 }
-footer img{
- height: 200px;
- width: 200px;
- display: flex;
- justify-self: center;
- align-self: center;
+footer img {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
 }
 
-.socialLinks{
+.socialLinks {
   display: flex;
   flex-direction: column;
+}
+
+/* Booking Form */
+
+.resForm {
+  height: 100vh;
+  padding: 3% 10%;
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+label {
+  margin: 5px;
+  font-weight: 500;
+}
+
+input,
+option {
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+.resForm Button {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
 }

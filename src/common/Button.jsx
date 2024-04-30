@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = ({ buttonLabel, linkTo }) => {
+const Button = ({ buttonLabel, linkTo, handleClick }) => {
   return (
     <Link to={linkTo}>
-      <button className="mainBtn">{buttonLabel}</button>
+      <button className="mainBtn" onClick={handleClick}>{buttonLabel}</button>
     </Link>
   );
 };

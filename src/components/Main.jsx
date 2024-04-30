@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../common/Button";
 import Card from "../common/Card";
 import IndianDishImage from "../assets/IndianDish.jpg";
@@ -25,7 +25,7 @@ const Main = () => {
             Experience zestful flavors at Little Lemon Restaurant, <br />
             where every bite is a burst of freshness.
           </p>
-          <Button buttonLabel={"Reserve a Table"} linkTo={'/booking'} />
+          <Button buttonLabel={"Reserve a Table"} linkTo={"/booking"} />
         </div>
         <img src={IndianDishImage} alt="dish image" />
       </div>
