@@ -6,7 +6,7 @@ import Main from "./components/Main";
 import Booking from "./components/Booking";
 import { useReducer } from "react";
 
-// / Reducer function to manage availableTimes state
+// Reducer function to manage availableTimes state
 const availableTimesReducer = (state, action) => {
   switch (action.type) {
     case "UPDATE_TIMES":
@@ -29,13 +29,17 @@ function App() {
     <>
       <div className="main">
         <BrowserRouter>
-          <Header data-testid="header"  />
+          <Header data-testid="header" />
           <Routes>
             <Route path="*" element={<Main />} />
             <Route
               path="/booking"
               element={
-                <Booking availableTimes={availableTimes} dispatch={dispatch} times={initialState}/>
+                <Booking
+                  availableTimes={availableTimes}
+                  dispatch={dispatch}
+                  times={initialState}
+                />
               }
             />
           </Routes>
